@@ -1,10 +1,10 @@
-package com.empty;
+package com.expr.empty;
 
-public class Parserexpr {
+public class ParserExpr {
     private ArgsTokenMgr tm;
     private char currentToken;
 
-    public Parserexpr(ArgsTokenMgr tm)
+    public ParserExpr(ArgsTokenMgr tm)
     {
         this.tm=tm;
         advance();

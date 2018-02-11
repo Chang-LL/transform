@@ -1,4 +1,4 @@
-
+package com.expr.empty;
 /*
 * void S():{}                                    选择集合
 * {
@@ -20,9 +20,9 @@
 */
 
 
-import com.empty.ArgsTokenMgr;
-import com.empty.Parser;
-import com.empty.Parserexpr;
+import com.expr.empty.ArgsTokenMgr;
+import com.expr.empty.Parser;
+import com.expr.empty.ParserExpr;
 
 public class Main {
     public static void main(String[]args)
@@ -32,7 +32,7 @@ public class Main {
 
         Parser parser=new Parser(tm);
 
-        Parserexpr parser1=new Parserexpr(tm);
+        ParserExpr parser1=new ParserExpr(tm);
 
         try {
             //parser.parse();
@@ -45,6 +45,4 @@ public class Main {
             System.exit(1);
         }
     }
-
-
 }
