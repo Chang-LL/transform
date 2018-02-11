@@ -33,7 +33,6 @@ public class Main {
 
         try {
             parser.parse();
-
         }
         catch (RuntimeException e)
         {

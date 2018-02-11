@@ -5,16 +5,12 @@ import java.util.*;
 public class Parser
 {
     private ArgsTokenMgr tm;
-    private Stack<Character> stk;
     private char currentToken;
 
     public Parser(ArgsTokenMgr tm)
     {
         this.tm=tm;
         advance();
-        stk=new Stack<Character>();
-        stk.push('$');
-        stk.push('$');
     }
 
     private void advance()
@@ -50,8 +46,8 @@ public class Parser
     private void C() {
         switch (currentToken)
         {
-            case 'C':
-                consume('C');
+            case 'c':
+                consume('c');
                 System.out.println('c');
                 C();
                 break;
